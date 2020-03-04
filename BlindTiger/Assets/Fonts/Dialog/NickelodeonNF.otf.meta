@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: f29044bbdc0487746b21bd0abaeb4968
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Nickelodeon NF
+  fontNames:
+  - Nickelodeon NF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b235c107c4c5b7943b4010813ba4a4ba, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

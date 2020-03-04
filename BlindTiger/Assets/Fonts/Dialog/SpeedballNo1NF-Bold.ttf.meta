@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: ca3d613fa73e6d040b414c2e014b679c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Speedball No1 NF
+  fontNames:
+  - Speedball No1 NF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 01b8cad1363c10949a2dd34baca3363b, type: 3}
+  - {fileID: 12800000, guid: 4287945900474ca43a4cf845a26ff26e, type: 3}
+  - {fileID: 12800000, guid: 1a6c62aace12547438ff8112c882c217, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

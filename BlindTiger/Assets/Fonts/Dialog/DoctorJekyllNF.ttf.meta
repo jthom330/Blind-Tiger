@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 04737a98b06c7dd4d99201f4b08fd055
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Doctor Jekyll NF
+  fontNames:
+  - Doctor Jekyll NF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 60df0af28ab50ad459e4dfb79fc9cb7c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
