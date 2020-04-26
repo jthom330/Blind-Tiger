@@ -257,7 +257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &127980098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,14 +280,20 @@ MonoBehaviour:
       - {x: -16.945202, y: 0, z: 116.57512}
       - {x: -98.402275, y: 0, z: 124.73361}
       - {x: -115, y: 0, z: 60}
-      - {x: -116.2492, y: 0, z: 55.12793}
-      - {x: -115.971756, y: 0, z: -35.274925}
-      - {x: -115, y: 0, z: -50}
-      - {x: -103.15086, y: 0, z: -104.79333}
-      - {x: -22.81269, y: 0, z: -117.21109}
-      - {x: -5, y: 0, z: -50}
-      - {x: -4.8045845, y: 0, z: -34.761887}
-      - {x: -4.314865, y: 0, z: -9.354895}
+      - {x: -118.051605, y: 0.27270508, z: 50.664658}
+      - {x: -124.076, y: 0, z: 37.952057}
+      - {x: -125, y: 0, z: 30}
+      - {x: -125.08276, y: 0, z: 2.6693726}
+      - {x: -125.75256, y: 0, z: -38.596306}
+      - {x: -125, y: 0, z: -50}
+      - {x: -109.93672, y: 0.47810364, z: -119.30481}
+      - {x: -13.454792, y: 0.30715942, z: -126.51033}
+      - {x: 5, y: 0, z: -50}
+      - {x: 6.0372086, y: 0, z: -40.635048}
+      - {x: -2.0884159, y: 0, z: -30.965736}
+      - {x: -5, y: 0, z: -20}
+      - {x: -4.8077393, y: -0.030075073, z: -12.2457695}
+      - {x: -4.7363057, y: 0, z: -3.6005063}
       isClosed: 1
       space: 0
       controlMode: 2
@@ -302,9 +308,11 @@ MonoBehaviour:
       - 0
       - 0
       - 0
+      - 0
+      - 0
       globalNormalsAngle: 90
       flipNormals: 0
-    vertexPathUpToDate: 0
+    vertexPathUpToDate: 1
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -567,6 +575,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83f5ab1ec8ca5ae4b9e96994ea597269, type: 3}
+--- !u!1 &339542591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339542593}
+  - component: {fileID: 339542592}
+  m_Layer: 0
+  m_Name: RaceGameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &339542592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339542591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7edb3e0145675704ea450cd18f30debd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car1: {fileID: 1623062310}
+  car2: {fileID: 612512416}
+  lapsToWin: 1
+  car1Wins: 0
+  car2Wins: 0
+--- !u!4 &339542593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339542591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.4591742, y: 5.563636, z: 6.1393414}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &433898994 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 498650, guid: 413587e452fcd0645bf7cc212f7f40ce,
@@ -583,6 +639,10 @@ PrefabInstance:
     - target: {fileID: 176824, guid: 9802b6ed54d9bb247aef61e3cc4eb0e0, type: 3}
       propertyPath: m_Name
       value: SR_Veh_StockCar_White
+      objectReference: {fileID: 0}
+    - target: {fileID: 176824, guid: 9802b6ed54d9bb247aef61e3cc4eb0e0, type: 3}
+      propertyPath: m_TagString
+      value: car
       objectReference: {fileID: 0}
     - target: {fileID: 440240, guid: 9802b6ed54d9bb247aef61e3cc4eb0e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -656,7 +716,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathCreator: {fileID: 1665788822}
   endOfPathInstruction: 0
-  speed: 60
+  spinAngle: 0
+  speed: 100
+--- !u!65 &612512421
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612512416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8, y: 2, z: 7.9}
+  m_Center: {x: 0, y: 1.1612488, z: 0}
+--- !u!54 &612512422
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612512416}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &612512423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612512416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae7b8033f6ab58459d97d5d940bbe2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lapCountdownTime: 0
+  lapCount: 0
 --- !u!4 &643650439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 490240, guid: 080163e4c778e8d4fb170d5395ed0614,
@@ -1488,6 +1592,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83f5ab1ec8ca5ae4b9e96994ea597269, type: 3}
+--- !u!1 &1371118120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 155600, guid: fdbfbc0fdb14aea4f97f852e467cf462,
+    type: 3}
+  m_PrefabInstance: {fileID: 1925835197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1371118121
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371118120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22.285492, y: 2.7927065, z: 2.7428353}
+  m_Center: {x: 0.000011444089, y: 0.15016603, z: 4.9850664}
+--- !u!54 &1371118122
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371118120}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!4 &1371118123 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 460206, guid: fdbfbc0fdb14aea4f97f852e467cf462,
@@ -1646,7 +1785,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathCreator: {fileID: 127980098}
   endOfPathInstruction: 0
-  speed: 60
+  spinAngle: 0
+  speed: 100
+--- !u!65 &1623062315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623062310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8, y: 2, z: 7.9}
+  m_Center: {x: 0, y: 1.1612488, z: 0}
+--- !u!54 &1623062316
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623062310}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1623062317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623062310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae7b8033f6ab58459d97d5d940bbe2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lapCountdownTime: 0
+  lapCount: 0
 --- !u!1 &1665788821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,7 +1901,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 90
       flipNormals: 0
-    vertexPathUpToDate: 0
+    vertexPathUpToDate: 1
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -1769,6 +1952,10 @@ PrefabInstance:
     - target: {fileID: 119332, guid: ab8515495709bd5418189836d55509b3, type: 3}
       propertyPath: m_Name
       value: SR_Veh_StockCar_Lime
+      objectReference: {fileID: 0}
+    - target: {fileID: 119332, guid: ab8515495709bd5418189836d55509b3, type: 3}
+      propertyPath: m_TagString
+      value: car
       objectReference: {fileID: 0}
     - target: {fileID: 430278, guid: ab8515495709bd5418189836d55509b3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1889,6 +2076,10 @@ PrefabInstance:
     - target: {fileID: 155600, guid: fdbfbc0fdb14aea4f97f852e467cf462, type: 3}
       propertyPath: m_Name
       value: SR_Env_Raised_Track_StartingLine_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 155600, guid: fdbfbc0fdb14aea4f97f852e467cf462, type: 3}
+      propertyPath: m_TagString
+      value: finishline
       objectReference: {fileID: 0}
     - target: {fileID: 460206, guid: fdbfbc0fdb14aea4f97f852e467cf462, type: 3}
       propertyPath: m_LocalPosition.x

@@ -23,7 +23,7 @@ namespace PathCreation.Examples
                 // Subscribed to the pathUpdated event so that we're notified if the path changes during the game
                 pathCreator.pathUpdated += OnPathChanged;
                 speed = DEFAULT_DRIVING_SPEED;
-    }
+            }
         }
 
         void Update()
@@ -33,7 +33,6 @@ namespace PathCreation.Examples
                 if (!crashing)
                 {
                     speed = Random.Range(MIN_DRIVING_SPEED, MAX_DRIVING_SPEED);
-                    Debug.Log(speed);
                     distanceTravelled += speed * Time.deltaTime;
                     transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
                     transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction);
