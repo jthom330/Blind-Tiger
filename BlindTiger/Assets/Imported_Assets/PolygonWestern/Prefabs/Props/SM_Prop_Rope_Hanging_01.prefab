@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4963777223076574}
   - component: {fileID: 33839470343682874}
   - component: {fileID: 23146278001107542}
+  - component: {fileID: 64498817486040458}
+  - component: {fileID: 64232205412250916}
   m_Layer: 0
   m_Name: SM_Prop_Rope_Hanging_01
   m_TagString: Untagged
@@ -34,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1755709941413242}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +82,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1755709941413242}
   m_Mesh: {fileID: 4300000, guid: 30eb3a54d33e072489df33b40ed1af7c, type: 3}
+--- !u!64 &64232205412250916
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1755709941413242}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 43385296770753694, guid: 6cd2271cd3650874a8aac7d59bb7955c, type: 2}
+--- !u!64 &64498817486040458
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1755709941413242}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 43054320835759804, guid: 6cd2271cd3650874a8aac7d59bb7955c, type: 2}
