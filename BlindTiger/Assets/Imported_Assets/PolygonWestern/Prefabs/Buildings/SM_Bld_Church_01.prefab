@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4688219364215310}
   - component: {fileID: 33629821886219756}
   - component: {fileID: 23528156438368990}
+  - component: {fileID: 64841125210347876}
   m_Layer: 0
   m_Name: SM_Bld_Church_01
   m_TagString: Untagged
@@ -55,6 +56,7 @@ GameObject:
   - component: {fileID: 4686404985583184}
   - component: {fileID: 33303448391809272}
   - component: {fileID: 23166872923016758}
+  - component: {fileID: 64018274781366170}
   m_Layer: 0
   m_Name: SM_Bld_Church_Tower_01
   m_TagString: Untagged
@@ -72,6 +74,7 @@ GameObject:
   - component: {fileID: 4926981585705886}
   - component: {fileID: 33159190507794210}
   - component: {fileID: 23170404457389194}
+  - component: {fileID: 65033630966700596}
   m_Layer: 0
   m_Name: SM_Bld_Church_Door_01
   m_TagString: Untagged
@@ -290,3 +293,43 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1404303191809006}
   m_Mesh: {fileID: 4300002, guid: 34dcde4421f1c3f4d8017b9c37b6007c, type: 3}
+--- !u!64 &64018274781366170
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1607269105168272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 003bc867ea77aab419e44228ac3d91a9, type: 3}
+--- !u!64 &64841125210347876
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1134513023205410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: d7704ebc5494f5c44ab2262fcca06241, type: 3}
+--- !u!65 &65033630966700596
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1723605563307230}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2916038, y: 2.538355, z: 0.17768432}
+  m_Center: {x: -0.6458019, y: 1.3055278, z: -0.00000045448542}

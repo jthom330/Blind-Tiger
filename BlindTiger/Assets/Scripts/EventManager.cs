@@ -5,7 +5,9 @@ using UnityEngine;
 public class EventManager : MonoBehaviour
 {
     public PlayerMovement movement;
-    public Animator doorAnim;
+    public Animator startButtonAnim;
+    public Animator canvasSettingsAnim;
+    public GameObject cart;
 
 
     // Start is called before the first frame update
@@ -24,9 +26,22 @@ public class EventManager : MonoBehaviour
     {
         //pull settings from player preps and set to globally accessable variables.
 
-        //fade out menu        
+        //fade out menu
+        startButtonAnim.SetTrigger("start");
 
-        StartCoroutine(IntroMovement());
+
+        //StartCoroutine(IntroMovement());
+        cart.SetActive(true);
+    }
+
+    public void OpenSettings()
+    {
+        canvasSettingsAnim.SetBool("active", true);
+    }
+
+    public void CloseSettings()
+    {
+        canvasSettingsAnim.SetBool("active", false);
     }
 
     private IEnumerator IntroMovement()
@@ -37,7 +52,7 @@ public class EventManager : MonoBehaviour
         yield return StartCoroutine(movement.Look(movement.start));
 
         //open door
-        doorAnim.SetTrigger("Open");
+        //doorAnim.SetTrigger("Open");
         yield return StartCoroutine(movement.Wait(1));
         //start sound fade
 

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4922961068858072}
   - component: {fileID: 33725981216967854}
   - component: {fileID: 23590663436605614}
+  - component: {fileID: 64452529449277822}
   m_Layer: 0
   m_Name: SM_Prop_Curtain_Rail_01
   m_TagString: Untagged
@@ -34,8 +35,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1156994372719934}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1156994372719934}
   m_Mesh: {fileID: 4300000, guid: b5f965b285d441d4ea7e6fe74a1f5335, type: 3}
+--- !u!64 &64452529449277822
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156994372719934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 43711095139977644, guid: 928ad82aedaef2e48918ec7aa2991097, type: 2}

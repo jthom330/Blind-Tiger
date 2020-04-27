@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4800815144599466}
   - component: {fileID: 33080959390389210}
   - component: {fileID: 23705877774723018}
+  - component: {fileID: 64034110770052032}
   m_Layer: 0
   m_Name: SM_Env_BonePile_Small_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1031225388075684}
   m_Mesh: {fileID: 4300000, guid: 37040d1793980604fadbbfe0c03e6fac, type: 3}
+--- !u!64 &64034110770052032
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031225388075684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 43185238458645196, guid: 2df7986d53550ec4fa26b8fa3a2042e1, type: 2}

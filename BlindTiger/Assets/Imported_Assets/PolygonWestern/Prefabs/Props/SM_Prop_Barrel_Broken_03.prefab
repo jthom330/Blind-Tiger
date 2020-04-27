@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4382815039286744}
   - component: {fileID: 33352868248551598}
   - component: {fileID: 23828962683032356}
+  - component: {fileID: 64132588742751602}
   m_Layer: 0
   m_Name: SM_Prop_Barrel_Broken_03
   m_TagString: Untagged
@@ -80,3 +81,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1930747114588570}
   m_Mesh: {fileID: 4300000, guid: 1d9b3b36c7ab99f45b0ec6e75a68bf61, type: 3}
+--- !u!64 &64132588742751602
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1930747114588570}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 43263891205420806, guid: a7becf496a500c34485cc153397cfb2b, type: 2}

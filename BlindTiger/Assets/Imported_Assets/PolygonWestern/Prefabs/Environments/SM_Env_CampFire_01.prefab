@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4787176058424746}
   - component: {fileID: 33516181274706442}
   - component: {fileID: 23802775726553572}
+  - component: {fileID: 64410383888102886}
+  - component: {fileID: 64447834027003708}
   m_Layer: 0
   m_Name: SM_Env_CampFire_01
   m_TagString: Untagged
@@ -80,3 +82,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1207108268532708}
   m_Mesh: {fileID: 4300000, guid: f0372274699125d4c80c9ed7e8558015, type: 3}
+--- !u!64 &64410383888102886
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207108268532708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 43928316954636116, guid: 83a9e5634d02e4b4dba649df0bdc88ed, type: 2}
+--- !u!64 &64447834027003708
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207108268532708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 43588110369961836, guid: 83a9e5634d02e4b4dba649df0bdc88ed, type: 2}
