@@ -1,25 +1,22 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
-    public PlayerMovement movement;
-    public Animator startButtonAnim;
     public Animator canvasSettingsAnim;
     public GameObject cart;
+    public PlayerMovement movement;
+    public Animator startButtonAnim;
 
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
     }
 
     public void StartGame()
