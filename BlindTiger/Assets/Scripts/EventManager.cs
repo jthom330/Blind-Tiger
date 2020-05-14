@@ -40,23 +40,4 @@ public class EventManager : MonoBehaviour
     {
         canvasSettingsAnim.SetBool("active", false);
     }
-
-    private IEnumerator IntroMovement()
-    {
-        yield return StartCoroutine(movement.Look(movement.entrance));
-        yield return StartCoroutine(movement.Move(movement.entrance));
-
-        yield return StartCoroutine(movement.Look(movement.start));
-
-        //open door
-        //doorAnim.SetTrigger("Open");
-        yield return StartCoroutine(movement.Wait(1));
-        //start sound fade
-
-        yield return StartCoroutine(movement.Move(movement.start));
-        //close door
-
-        //despawn outside
-        yield return null;
-    }
 }
